@@ -1,0 +1,656 @@
+@import "./variables";
+@import "./_tabletview";
+@import "./_mobileview.scss";
+@mixin flex ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+   height: 100%;
+  }
+
+body{
+    
+    margin: 0;
+   
+}
+#content{
+
+    min-height:calc(100% - 250px);
+}
+.nav{
+    background-color: white;
+    max-height: 200px;
+}
+.logo-pic{
+    width:200px;
+    height:150px;
+    
+    margin-right: calc(50vw - 128px)
+
+
+
+
+}
+#header{
+    height: 100vh;
+    min-height: 821px;
+    min-width:100vw;
+    background-color: purple;
+    background-image: url(../assets/browntable.jpg);
+    background-size: cover;
+
+        .header-overlay{
+            @include flex(column);
+            min-width: 100vw;
+            height: 100vh;
+            min-height: 821px;
+            background-color: rgba(0, 0, 0, 0.5);
+            
+                h1{
+                    color: white;
+                    font-family: 'Times New Roman';
+                    font-size: 62px;
+
+
+                }
+        }
+
+}
+
+
+#About-us{
+    @include flex(row);
+    width:100%;
+    height:660px;
+    
+    .About-description{
+        @include flex(column);
+        width: 500px;
+        height: 500px;
+        min-width: 400px;
+        
+        text-align: center;
+
+            h2{
+                font-family: 'Times New Roman';
+            }
+    }
+    .about-pic{
+        width:281px;
+        height: 387px;
+        border-radius: 15px;
+        margin-left: 140px;
+    }
+}
+
+#Elegance-sec{
+    @include flex(row);
+    width:100%;
+    height:650px;
+    background-color: white;
+    padding-left: 70px;
+
+    .elegance-pic{
+
+        width:781px;
+        height: 487px;
+        border-radius: 15px;
+    
+    }
+    .elegance-description{
+       
+        background-color: $primary-color;
+        height: 400px;
+        width: 365px;
+        min-width: 365px;
+        text-align: center;
+        padding: 25px;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+        right: 100px;
+        color: white;
+
+        h2{
+            font-family: 'Times New Roman';
+
+        }
+    }
+}
+
+#testimonial{
+    @include flex(column);
+    height:600px;
+    width: 100%;
+
+    .testimonial-description{
+        @include flex(column);
+        text-align:center;
+        height: 400px;
+        width: 500px;
+        min-width: 500px;
+
+        .quote-pic{
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 22.5px;
+
+        }
+    }
+
+
+}
+
+#Services{
+   @include flex(row);
+   height:600px;
+   width: 100%;
+   padding-right: 70px;
+
+    .desert-pic{
+        width:781px;
+        height: 487px;
+        border-radius: 15px;
+    }
+
+    .services-description{
+        text-align: center;
+        height: 400px;
+        width: 365px;
+        min-width: 365px;
+        background-color: $primary-color;
+        padding: 25px;
+        color: white;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        border-radius: 15px;
+
+        h2{
+            font-family: 'Times New Roman';
+
+        }
+    }
+    
+    
+}
+
+#ChooseUs{
+    @include flex(row);
+    height:700px;
+    width:100%;
+
+    .choose-description{
+        @include flex(column);
+        height: 400px;
+        width: 365px;
+        min-width: 365px;
+        text-align: center;
+
+        h2{
+            font-family: 'Times New Roman';
+
+        }
+    }
+    .teamwork-pic{
+        height: 387px;
+        width:400px;
+        margin-left: 140px;
+
+    }
+}
+#Contact{
+    @include flex(row);
+    height:570px;
+    width:100%;
+    margin-bottom: 100px;
+    .Contact-info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        height: 400px;
+        width: 365px;
+        min-width: 365px;
+        text-align: left;
+        line-height: 30px;
+        
+
+        h2{
+            font-family: 'Times New Roman';
+            
+        }
+        em{
+            font-style: normal;
+            text-align: left;
+           
+        }
+
+    }
+
+    .contact-email{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: $primary-color;
+        width: 450px;
+        min-width: 450px;
+        height: 400px;
+        padding: 25px;
+
+        .contact-textboxes{
+            @include flex(row);
+            width: 90%;
+
+            .medium-textbox{
+                width:50%;
+                margin-top: 15px;
+                height:32px;
+                border: none;
+            }
+            .textbox-margin{
+                margin-right: 10px;
+
+            }
+
+            .long-textbox{
+                width: 100%;
+                margin-bottom: 15px;
+                margin-top: 18px;
+                height: 32px;
+                border: none;
+            }
+
+            .large-textbox{
+                height: 120px;
+                width: 100%;
+                border: none;
+            }
+        }
+
+        h2{
+            font-family: 'Times New Roman';
+            color: white;
+            margin-right: auto;
+            margin-left: 20px;
+
+        }
+
+
+    }
+}
+
+#Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: baseline;
+    background-color: $primary-color;
+    height:250px;
+    width: 100%;
+    
+    .Contact-info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        height: 200px;
+        width: 365px;
+        min-width: 365px;
+        text-align: left;
+        line-height: 30px;
+        margin-bottom: 42px;
+
+        h2{
+            font-family: 'Times New Roman';
+            color: white;
+        }
+        em{
+            font-style: normal;
+            text-align: left;
+            color: white;
+        }
+
+    }
+
+    .social-media{
+        display: flex;
+        align-items: baseline;
+        justify-content: baseline;
+        flex-direction: column;
+        line-height: 30px;
+        color: white;
+
+        em{
+            font-style: normal;
+        }
+
+    }
+
+    .sections{
+        display: flex;
+        align-items: baseline;
+        justify-content: baseline;
+        flex-direction: column;
+        line-height: 30px;
+        margin-left: 94px;
+        color: white;
+
+        em{
+            font-style: normal;
+        }
+
+
+    }
+
+}
+@media only screen and (max-width: 1440px){
+
+
+    #About-us{
+        @include flex(row);
+        width:100%;
+        height:660px;
+        
+        .About-description{
+            @include flex(column);
+            width: 400px;
+            height: 500px;
+            min-width: 400px;
+            
+            text-align: center;
+
+                h2{
+                    font-family: 'Times New Roman';
+                }
+        }
+        .about-pic{
+            width:281px;
+            height: 387px;
+            border-radius: 15px;
+            margin-left: 140px;
+        }
+    }
+
+    #Elegance-sec{
+        @include flex(row);
+        width:100%;
+        height:600px;
+        background-color: white;
+        padding-left: 70px;
+
+        .elegance-pic{
+
+            width:781px;
+            height: 487px;
+            border-radius: 15px;
+        
+        }
+        .elegance-description{
+           
+            background-color: $primary-color;
+            height: 400px;
+            width: 365px;
+            min-width: 365px;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            position: relative;
+            top: 100px;
+            right: 100px;
+            color: white;
+
+            h2{
+                font-family: 'Times New Roman';
+
+            }
+        }
+    }
+
+    #testimonial{
+        @include flex(column);
+        height:550px;
+        width: 100%;
+
+        .testimonial-description{
+            @include flex(column);
+            text-align:center;
+            height: 400px;
+            width: 500px;
+            min-width: 500px;
+
+            .quote-pic{
+                margin-right: auto;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 22.5px;
+
+            }
+        }
+
+
+    }
+
+    #Services{
+       @include flex(row);
+       height:500px;
+       width: 100%;
+       padding-right: 70px;
+
+        .desert-pic{
+            width:781px;
+            height: 487px;
+            border-radius: 15px;
+        }
+
+        .services-description{
+            text-align: center;
+            height: 400px;
+            width: 365px;
+            min-width: 365px;
+            background-color: $primary-color;
+            padding: 25px;
+            color: white;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            border-radius: 15px;
+
+            h2{
+                font-family: 'Times New Roman';
+    
+            }
+        }
+        
+        
+    }
+
+    #ChooseUs{
+        @include flex(row);
+        height:650px;
+        width:100%;
+
+        .choose-description{
+            @include flex(column);
+            height: 400px;
+            width: 365px;
+            min-width: 365px;
+            text-align: center;
+
+            h2{
+                font-family: 'Times New Roman';
+    
+            }
+        }
+        .teamwork-pic{
+            height: 387px;
+            width:400px;
+            margin-left: 140px;
+
+        }
+    }
+    #Contact{
+        @include flex(row);
+        height:470px;
+        width:100%;
+        margin-bottom: 100px;
+        .Contact-info{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            height: 400px;
+            width: 365px;
+            min-width: 365px;
+            text-align: left;
+            line-height: 30px;
+            
+
+            h2{
+                font-family: 'Times New Roman';
+                
+            }
+            em{
+                font-style: normal;
+                text-align: left;
+               
+            }
+
+        }
+
+        .contact-email{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            background-color: $primary-color;
+            width: 450px;
+            min-width: 450px;
+            height: 400px;
+            padding: 25px;
+
+            .contact-textboxes{
+                @include flex(row);
+                width: 90%;
+
+                .medium-textbox{
+                    width:50%;
+                    margin-top: 15px;
+                    height:32px;
+                    border: none;
+                }
+                .textbox-margin{
+                    margin-right: 10px;
+
+                }
+
+                .long-textbox{
+                    width: 100%;
+                    margin-bottom: 15px;
+                    margin-top: 18px;
+                    height: 32px;
+                    border: none;
+                }
+
+                .large-textbox{
+                    height: 120px;
+                    width: 100%;
+                    border: none;
+                }
+            }
+
+            h2{
+                font-family: 'Times New Roman';
+                color: white;
+                margin-right: auto;
+                margin-left: 20px;
+
+            }
+
+
+        }
+    }
+
+    #Footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: baseline;
+        background-color: $primary-color;
+        height:250px;
+        width: 100%;
+        
+        .Contact-info{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            height: 200px;
+            width: 365px;
+            min-width: 365px;
+            text-align: left;
+            line-height: 30px;
+            margin-bottom: 42px;
+
+            h2{
+                font-family: 'Times New Roman';
+                color: white;
+            }
+            em{
+                font-style: normal;
+                text-align: left;
+                color: white;
+            }
+
+        }
+
+        .social-media{
+            display: flex;
+            align-items: baseline;
+            justify-content: baseline;
+            flex-direction: column;
+            line-height: 30px;
+            color: white;
+
+            em{
+                font-style: normal;
+            }
+
+        }
+
+        .sections{
+            display: flex;
+            align-items: baseline;
+            justify-content: baseline;
+            flex-direction: column;
+            line-height: 30px;
+            margin-left: 94px;
+            color: white;
+
+            em{
+                font-style: normal;
+            }
+
+
+        }
+
+    }
+
+}
+
+
+

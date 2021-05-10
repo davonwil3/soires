@@ -1,0 +1,110 @@
+@mixin flex ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction !important;
+}
+
+
+
+@media only screen and (max-width: 1100px){
+
+
+    #header{
+
+        h1{
+            font-size: 42px !important;
+        }
+    }
+    #Elegance-sec{
+        flex-wrap: wrap;
+        height:  1000px !important;
+        padding-left: unset !important;
+        flex-direction: column;
+
+        .elegance-pic{
+            width:600px !important;
+            height: 387px !important;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .elegance-description{
+            position: unset !important;
+            margin-top: 100px;
+            width: 465px !important;
+            min-width: 465px !important;
+        }
+    }
+   
+   
+
+    #Services{
+        @include flex(column-reverse);
+        height: 1000px !important;
+        padding-right: unset !important;
+
+        .desert-pic{
+            width: 600px !important;
+            height: 387px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+
+        }
+        .services-description{
+
+            position: unset !important;
+            margin-top: 100px !important;
+            width: 465px !important;
+            min-width: 465px !important;
+        }
+    }
+
+    #ChooseUs{
+        @include flex(column-reverse);
+        height: 900px !important;
+
+        .teamwork-pic{
+
+            margin-left: unset !important;
+            width: 465px !important;
+        }
+
+
+    }
+
+    
+}
+@media only screen and (max-width: 870px){
+
+    #header{
+
+        background-position: right center;
+    }
+    #About-us{
+        @include flex(column-reverse);
+        width:100%;
+        height:900px !important;
+
+        .about-pic{
+            margin-left: unset !important;
+            margin-top: 100px;
+        }
+    }
+
+    #Contact{
+        @include flex(column);
+        height: 600px !important;
+
+        .Contact-info{
+            align-items: center !important;
+
+        }
+        .contact-email{
+            margin-top: 100px;
+        }
+    }
+   
+
+}

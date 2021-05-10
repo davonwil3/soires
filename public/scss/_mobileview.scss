@@ -1,0 +1,152 @@
+@media only screen and (max-width: 648px){
+
+    #header{
+
+        background-position: center !important;
+    }
+    #About-us{
+       
+        height:850px !important;
+
+        .about-pic{
+            
+            margin-top: 100px;
+            width: 320px !important;
+        }
+        .About-description{
+            font-size: 14px !important;
+            width: 320px !important;
+            min-width: 320px !important;
+
+        }
+    }
+
+
+    #Elegance-sec{
+        height:  700px !important;
+        .elegance-pic{
+            width:320px !important;
+            height: 270px !important;
+        
+        
+        }
+
+        .elegance-description{
+            position: unset !important;
+            margin-top: 100px;
+            width: 320px !important;
+            min-width: 320px !important;
+        }
+    }
+
+    #testimonial{
+        height:510px !important;
+
+        .testimonial-description{
+        
+            height: 400px !important;
+            width: 320px !important;
+            min-width: 320px !important;
+
+            p{
+
+                font-size: 17px !important;
+            }
+        }
+    }
+
+    #Services{
+        
+        height:700px !important;
+        width: 100%;
+        padding-right: 70px;
+ 
+         .desert-pic{
+            width:320px !important;
+            height: 270px !important;
+             border-radius: 15px;
+         }
+         .services-description{
+
+            position: unset !important;
+            width: 320px !important;
+            min-width: 320px !important;
+         }
+        }
+
+    #ChooseUs{
+           
+        height:700px !important;
+           
+    
+        .choose-description{
+            width: 320px !important;
+            min-width: 320px !important;
+            font-size: 14px !important;
+               
+        }
+        .teamwork-pic{
+            margin-top: 100px !important;
+            width:320px !important;
+            height: 270px !important;
+    
+        }
+
+    }
+
+    #Contact{
+        height:670px !important;
+            
+
+        .contact-email{
+              
+            width: 320px !important;
+            min-width: 320px !important;
+            height: 440px !important;
+
+            .contact-textboxes{
+                @include flex(column);
+                width: 90%;
+
+            }
+            .medium-textbox{
+                 width:100% !important;
+                   
+                }
+            .textbox-margin{
+                margin-right: unset !important;
+
+            }
+
+        }
+        
+    }
+
+    #Footer{
+        flex-direction: column !important;
+        height:500px !important;
+        line-height: 50px !important;
+
+        .social-media{
+            align-items: flex-start !important;
+            justify-content: flex-start !important;
+            flex-direction: column;
+            line-height: 30px;
+            color: white;
+        }
+
+        .Contact-info{
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+            margin-bottom: unset !important;
+        }
+
+        .sections{
+            margin-left: unset !important;
+            margin-top: 20px ;
+        }
+
+    }
+    
+}
